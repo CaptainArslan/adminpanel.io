@@ -75,7 +75,8 @@
                                 </span>
                                 <div class="dropdown-menu p-0 m-0">
                                     <form>
-                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <input class="form-control" type="search" placeholder="Search"
+                                            aria-label="Search">
                                     </form>
                                 </div>
                             </div>
@@ -93,7 +94,8 @@
                                             <span class="success"><i class="ti-user"></i></span>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong>
+                                                        Successfully
                                                     </p>
                                                 </a>
                                             </div>
@@ -112,7 +114,8 @@
                                             <span class="danger"><i class="ti-bookmark"></i></span>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as
+                                                        unsolved.
                                                     </p>
                                                 </a>
                                             </div>
@@ -131,7 +134,8 @@
                                             <span class="success"><i class="ti-image"></i></span>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong>
+                                                        Successfully
                                                     </p>
                                                 </a>
                                             </div>
@@ -283,45 +287,71 @@
                                                     </div>
                                                     <div class="form-group col-md-4">
                                                         <h5>Password:</h5>
-                                                        <input type="password" placeholder="Password" class="form-control">
+                                                        <input type="password" placeholder="Password"
+                                                            class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-4">
                                                         <h5>Address:</h5>
-                                                        <input type="text" placeholder="1234 Main St" class="form-control">
+                                                        <input type="text" placeholder="1234 Main St"
+                                                            class="form-control">
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-3">
                                                         <h5>Age:</h5>
-                                                        <input type="date" placeholder="must be between " class="form-control">
+                                                        <input type="date" id="date"
+                                                            placeholder="must be between greater than 10"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <h5>.</h5>
+                                                        <input type="text" id="user_age" placeholder="Age"
+                                                            class="form-control" readonly disabled="disabled">
                                                     </div>
                                                     <div class="form-group col-md-4">
                                                         <h5>Height:</h5>
-                                                        <input type="number" placeholder="height in cm" class="form-control">
+                                                        <input type="number" placeholder="height in cm"
+                                                            class="form-control">
                                                     </div>
                                                 </div>
+
                                                 <div class="form-row">
                                                     <div class="form-group col-md-4">
                                                         <h5>Select Gender: </h5>
-                                                        <div class="form-control">
-                                                            <div class="form-check form-check-inline">
-                                                                <label class="form-check-label">
-                                                                        <input type="radio" name="gender" class="form-check-input" value="m" >Male
-                                                                    </label>
-                                                            </div>
-                                                            <div class="form-check form-check-inline">
-                                                                <label class="form-check-label">
-                                                                        <input type="radio" name="gender" class="form-check-input" value="f">female
-                                                                    </label>
-                                                            </div>
-                                                            <div class="form-check form-check-inline">
-                                                                <label class="form-check-label">
-                                                                        <input type="radio" name="gender" class="form-check-input" value="o">other
-                                                                    </label>
-                                                            </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="gender"
+                                                                    class="form-check-input" value="m">Male
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="gender"
+                                                                    class="form-check-input" value="f">female
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="gender"
+                                                                    class="form-check-input" value="o">other
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Weight:</h5>
+                                                        <input type="number" placeholder="In Kg" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Waist:</h5>
+                                                        <input type="number" placeholder="In Inches"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Neck:</h5>
+                                                        <input type="number" placeholder="In Inches"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
                                                         <h5>Status:</h5>
                                                         <select class="form-control">
                                                             <option value="a">Active</option>
@@ -329,7 +359,9 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-primary" type="submit">Add Customer</button>
+                                                <center>
+                                                    <button class="btn btn-primary" type="submit">Add Customer</button>
+                                                </center>
                                             </form>
                                         </div>
                                     </div>
@@ -351,9 +383,9 @@
                                     <table id="example" class="display" style="min-width: 845px">
                                         <thead>
                                             <tr>
-                                                <td>*</td>
+                                                <th>*</th>
                                                 <th>Name</th>
-                                                <th>Position</th>
+                                                <th>PositionManage>
                                                 <th>Office</th>
                                                 <th>Age</th>
                                                 <th>Start date</th>
@@ -365,7 +397,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img width="35" src="./images/avatar/1.png" alt=""></a>
+                                                        <a href=""><img width="35" src="./images/avatar/1.png"
+                                                                alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>Tiger Nixon</td>
@@ -376,18 +409,15 @@
                                                 <td>$320,800</td>
                                                 <td>
                                                     <a href="">
-                                                        <button class="btn btn-primary">
-                                                        Edit
-                                                    </button>
-
+                                                        <butManageclass="btn btn-primary">
+                                                            Edit
                                                     </a>
-                                                    <input type="submit" class="btn btn-danger" value="Delete">
-                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img width="35" src="./images/avatar/1.png" alt=""></a>
+                                                        <a href=""><img width="35" src="./images/avatar/1.png"
+                                                                alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>Garrett Winters</td>
@@ -399,17 +429,15 @@
                                                 <td>
                                                     <a href="">
                                                         <button class="btn btn-primary">
-                                                        Edit
-                                                    </button>
-
+                                                            Manage
+                                                        </button>
                                                     </a>
-                                                    <input type="submit" class="btn btn-danger" value="Delete">
-                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img width="35" src="./images/avatar/1.png" alt=""></a>
+                                                        <a href=""><img width="35" src="./images/avatar/1.png"
+                                                                alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>Ashton Cox</td>
@@ -421,17 +449,15 @@
                                                 <td>
                                                     <a href="">
                                                         <button class="btn btn-primary">
-                                                        Edit
-                                                    </button>
-
+                                                            Manage
+                                                        </button>
                                                     </a>
-                                                    <input type="submit" class="btn btn-danger" value="Delete">
-                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img width="35" src="./images/avatar/1.png" alt=""></a>
+                                                        <a href=""><img width="35" src="./images/avatar/1.png"
+                                                                alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>Cedric Kelly</td>
@@ -443,17 +469,15 @@
                                                 <td>
                                                     <a href="">
                                                         <button class="btn btn-primary">
-                                                        Edit
-                                                    </button>
-
+                                                            Manage
+                                                        </button>
                                                     </a>
-                                                    <input type="submit" class="btn btn-danger" value="Delete">
-                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img width="35" src="./images/avatar/1.png" alt=""></a>
+                                                        <a href=""><img width="35" src="./images/avatar/1.png"
+                                                                alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>Airi Satou</td>
@@ -465,17 +489,15 @@
                                                 <td>
                                                     <a href="">
                                                         <button class="btn btn-primary">
-                                                        Edit
-                                                    </button>
-
+                                                            Manage
+                                                        </button>
                                                     </a>
-                                                    <input type="submit" class="btn btn-danger" value="Delete">
-                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href=""><img width="35" src="./images/avatar/1.png" alt=""></a>
+                                                        <a href=""><img width="35" src="./images/avatar/1.png"
+                                                                alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>Brielle Williamson</td>
@@ -487,19 +509,16 @@
                                                 <td>
                                                     <a href="">
                                                         <button class="btn btn-primary">
-                                                        Edit
-                                                    </button>
-
+                                                            Manage
+                                                        </button>
                                                     </a>
-                                                    <input type="submit" class="btn btn-danger" value="Delete">
-                                                </td>
                                             </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th>*</th>
                                                 <th>Name</th>
-                                                <th>Position</th>
+                                                <th>PositionManage>
                                                 <th>Office</th>
                                                 <th>Age</th>
                                                 <th>Start date</th>
@@ -518,7 +537,6 @@
         <!--**********************************
             Content body end
         ***********************************-->
-
 
         <!--**********************************
             Footer start
@@ -547,7 +565,28 @@
 
     <!--**********************************
         Scripts
+
     ***********************************-->
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#date').change(function () {
+                var now = new Date();   //Current Date
+                var past = new Date($('#date').val());  //Date of Birth
+                if (past > now) {
+                    alert('Entered Date is Greater than Current Date');
+                    return false;
+                }
+                var nowYear = now.getFullYear();  //Get current year
+                var pastYear = past.getFullYear();//Get Date of Birth year
+                // alert(pastYear+"  "+nowYear);
+                var age = nowYear - pastYear;  //calculate the difference
+                $('#user_age').val(age);
+            })
+        });
+    </script>
+
     <!-- Required vendors -->
     <script src="./vendor/global/global.min.js"></script>
     <script src="./js/quixnav-init.js"></script>
