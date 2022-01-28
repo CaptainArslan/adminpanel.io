@@ -277,7 +277,7 @@
                                 <div id="profile-settings" class="">
                                     <div class="pt-3">
                                         <div class="settings-form">
-                                            <form action="add_customer.html" method="">
+                                            <form action="add_customer.html" method="" enctype="multipart/form-data">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-3">
                                                         <h5>Product Image:</h5>
@@ -286,26 +286,33 @@
                                                             <label class="custom-file-label">Choose file</label>
                                                         </div>
                                                     </div>
+
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Code:</h5>
+                                                        <input type="email" placeholder="Product Code"
+                                                            class="form-control" required>
+                                                    </div>
                                                     <div class="form-group col-md-3">
                                                         <h5>Product Name:</h5>
-                                                        <input type="email" placeholder="Password" class="form-control">
+                                                        <input type="text" placeholder="Product Name"
+                                                            class="form-control">
                                                     </div>
                                                     <div class="form-group col-md-3">
                                                         <h5>Product Calory:</h5>
-                                                        <input type="password" placeholder="Password"
-                                                            class="form-control">
-                                                    </div>
-                                                    <div class="form-group col-md-3">
-                                                        <h5>Product Protein:</h5>
-                                                        <input type="text" placeholder="1234 Main St"
+                                                        <input type="numer" placeholder="Product Calory per 100mg"
                                                             class="form-control">
                                                     </div>
                                                 </div>
-                                                <div class="form-row">
+                                                <div class="form-row">.
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Protein:</h5>
+                                                        <input type="text" placeholder="Product Protein per 100mg"
+                                                            class="form-control">
+                                                    </div>
                                                     <div class="form-group col-md-3">
                                                         <h5>Product Carbohydrates:</h5>
-                                                        <input type="date" id="date"
-                                                            placeholder="must be between greater than 10"
+                                                        <input type="number" id="date"
+                                                            placeholder="Product Carbohydrates per 100mg"
                                                             class="form-control">
                                                     </div>
                                                     <div class="form-group col-md-3">
