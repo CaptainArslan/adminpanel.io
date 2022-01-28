@@ -10,9 +10,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./icons/font-awesome-old/css/font-awesome.min.css">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c3e204ff59.js" crossorigin="anonymous"></script>
+
     <!-- Datatable -->
     <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
@@ -50,7 +52,6 @@
                 <img class="logo-compact" src="./images/logo-text.png" alt="">
                 <img class="brand-title" src="./images/logo-text.png" alt="">
             </a>
-
             <div class="nav-control">
                 <div class="hamburger">
                     <span class="line"></span><span class="line"></span><span class="line"></span>
@@ -265,12 +266,121 @@
                         </ol>
                     </div>
                 </div>
+                <!-- row form card-->
+
+                <div class="row">
+                    <div class="col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Add Nutritionist</h4>
+                            </div>
+                            <div class="card-body">
+                                <div id="profile-settings" class="">
+                                    <div class="pt-3">
+                                        <div class="settings-form">
+                                            <form action="add_customer.html" method="">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <h5>Username:</h5>
+                                                        <input type="text" placeholder="Email" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <h5>Email:</h5>
+                                                        <input type="email" placeholder="Password" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <h5>Password:</h5>
+                                                        <input type="password" placeholder="Password"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <h5>Address:</h5>
+                                                        <input type="text" placeholder="1234 Main St"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Age:</h5>
+                                                        <input type="date" id="date"
+                                                            placeholder="must be between greater than 10"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-1">
+                                                        <h5>.</h5>
+                                                        <input type="text" id="user_age" placeholder="Age"
+                                                            class="form-control" readonly disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <h5>Height:</h5>
+                                                        <input type="number" placeholder="height in cm"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <h5>Select Gender: </h5>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="gender"
+                                                                    class="form-check-input" value="m">Male
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="gender"
+                                                                    class="form-check-input" value="f">female
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="gender"
+                                                                    class="form-check-input" value="o">other
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Weight:</h5>
+                                                        <input type="number" placeholder="In Kg" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Waist:</h5>
+                                                        <input type="number" placeholder="In Inches"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Neck:</h5>
+                                                        <input type="number" placeholder="In Inches"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Status:</h5>
+                                                        <select class="form-control">
+                                                            <option value="a">Active</option>
+                                                            <option value="d">Deactive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <center>
+                                                    <button class="btn btn-primary" type="submit">Add
+                                                        Nutritionist</button>
+                                                </center>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!--Customer Data tables -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Total Customer</h4>
+                                <h4 class="card-title">Latest Nutritionist</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -464,6 +574,24 @@
     ***********************************-->
     <!-- Jquery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#date').change(function () {
+                var now = new Date();   //Current Date
+                var past = new Date($('#date').val());  //Date of Birth
+                if (past > now) {
+                    alert('Entered Date is Greater than Current Date');
+                    return false;
+                }
+                var nowYear = now.getFullYear();  //Get current year
+                var pastYear = past.getFullYear();//Get Date of Birth year
+                // alert(pastYear+"  "+nowYear);
+                var age = nowYear - pastYear;  //calculate the difference
+                $('#user_age').val(age);
+            })
+        });
+    </script>
+
     <!-- Required vendors -->
     <script src="./vendor/global/global.min.js"></script>
     <script src="./js/quixnav-init.js"></script>

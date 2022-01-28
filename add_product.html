@@ -265,30 +265,100 @@
                         </ol>
                     </div>
                 </div>
+                <!-- row form card-->
+
+                <div class="row">
+                    <div class="col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Add Products</h4>
+                            </div>
+                            <div class="card-body">
+                                <div id="profile-settings" class="">
+                                    <div class="pt-3">
+                                        <div class="settings-form">
+                                            <form action="add_customer.html" method="">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Image:</h5>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input">
+                                                            <label class="custom-file-label">Choose file</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Name:</h5>
+                                                        <input type="email" placeholder="Password" class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Calory:</h5>
+                                                        <input type="password" placeholder="Password"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Protein:</h5>
+                                                        <input type="text" placeholder="1234 Main St"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Carbohydrates:</h5>
+                                                        <input type="date" id="date"
+                                                            placeholder="must be between greater than 10"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <h5>Product Fats</h5>
+                                                        <input type="text" id="user_age" placeholder="Age"
+                                                            class="form-control" readonly disabled="disabled">
+                                                    </div>
+                                                    <div class="form-group col-md-2">
+                                                        <h5>Status:</h5>
+                                                        <select class="form-control">
+                                                            <option value="a">Active</option>
+                                                            <option value="d">Deactive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <center>
+                                                    <button class="btn btn-primary" type="submit">Add Products</button>
+                                                </center>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!--Customer Data tables -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Total Customer</h4>
+                                <h4 class="card-title">Latest Added Products</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table id="example" class="display" style="min-width: 845px">
                                         <thead>
                                             <tr>
+                                                <th>Date</th>
                                                 <th>*</th>
                                                 <th>Name</th>
-                                                <th>PositionManage>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
-                                                <th>Action</th>
+                                                <th>Product Image</th>
+                                                <th>Calories</th>
+                                                <th>Protein</th>
+                                                <th>Carbs</th>
+                                                <th>Fats</th>
+                                                <th>Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td>20/01/2021</td>
                                                 <td>
                                                     <div class="round-img">
                                                         <a href=""><img width="35" src="./images/avatar/1.png"
@@ -309,6 +379,7 @@
                                                     </a>
                                             </tr>
                                             <tr>
+                                                <td>20/01/2021</td>
                                                 <td>
                                                     <div class="round-img">
                                                         <a href=""><img width="35" src="./images/avatar/1.png"
@@ -329,6 +400,7 @@
                                                     </a>
                                             </tr>
                                             <tr>
+                                                <td>20/01/2021</td>
                                                 <td>
                                                     <div class="round-img">
                                                         <a href=""><img width="35" src="./images/avatar/1.png"
@@ -349,6 +421,7 @@
                                                     </a>
                                             </tr>
                                             <tr>
+                                                <td>20/01/2021</td>
                                                 <td>
                                                     <div class="round-img">
                                                         <a href=""><img width="35" src="./images/avatar/1.png"
@@ -369,6 +442,7 @@
                                                     </a>
                                             </tr>
                                             <tr>
+                                                <td>20/01/2021</td>
                                                 <td>
                                                     <div class="round-img">
                                                         <a href=""><img width="35" src="./images/avatar/1.png"
@@ -389,6 +463,7 @@
                                                     </a>
                                             </tr>
                                             <tr>
+                                                <td>20/01/2021</td>
                                                 <td>
                                                     <div class="round-img">
                                                         <a href=""><img width="35" src="./images/avatar/1.png"
@@ -411,14 +486,15 @@
                                         </tbody>
                                         <tfoot>
                                             <tr>
+                                                <th>Date</th>
                                                 <th>*</th>
                                                 <th>Name</th>
-                                                <th>PositionManage>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
-                                                <th>Action</th>
+                                                <th>Product Image</th>
+                                                <th>Calories</th>
+                                                <th>Protein</th>
+                                                <th>Carbs</th>
+                                                <th>Fats</th>
+                                                <th>Manage</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -464,6 +540,7 @@
     ***********************************-->
     <!-- Jquery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
+
     <!-- Required vendors -->
     <script src="./vendor/global/global.min.js"></script>
     <script src="./js/quixnav-init.js"></script>
